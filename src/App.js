@@ -29,8 +29,8 @@ function App() {
       {
          (props.data) ?
          ( props.data.map((item,index)=> {
-            const {imdbId,Poster} = item;
-            return  <Movie Key={imdbId}>
+            const {Poster} = item;
+            return  <Movie key={index}>
                 <MovieImage  src={Poster} />
             </Movie>
           })) :
