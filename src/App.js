@@ -8,8 +8,6 @@ import {BannerContainer,BannerText} from './StyledComponent/banner';
 import {MovieContainer,MovieSearch,MovieCategory,MovieListScroll,Movie,MovieImage} from './StyledComponent/movie'
 
 
-const API_KEY ='b78fb30c';
-
 function App() {
 
   const [data,setData] = useState([]);
