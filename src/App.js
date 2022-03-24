@@ -5,7 +5,7 @@ import './App.css';
 
 import {HeaderContainer,HeaderLogo} from './StyledComponent/header';
 import {BannerContainer,BannerText} from './StyledComponent/banner';
-import {MovieContainer,MovieSearch,MovieCategory,MovieListScroll,Movie,MovieImage} from './StyledComponent/movie'
+import {MovieContainer,MovieSearch,MovieCategory,MovieListScroll,Movie,MovieImage} from './StyledComponent/movie';
 
 
 function App() {
