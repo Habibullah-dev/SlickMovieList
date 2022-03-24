@@ -3,10 +3,13 @@ import axios from 'axios';
 
 import './App.css';
 
+//style component
 import {HeaderContainer,HeaderLogo} from './StyledComponent/header';
 import {BannerContainer,BannerText} from './StyledComponent/banner';
-import {MovieContainer,MovieSearch,MovieCategory,MovieListScroll,Movie,MovieImage} from './StyledComponent/movie';
+import {MovieContainer,MovieSearch,MovieCategory,MovieListScroll} from './StyledComponent/movie';
 
+// functional Component
+import  MovieFuncList from './FunctionComponents/MovieFuncList';
 
 function App() {
 
@@ -21,25 +24,6 @@ function App() {
       .then((response) => setData(response.data.Search)); 
 
   },[SearchUrl]);
-
-
-  function MovieFuncList(props) {
-    return(
-      <>
-      {
-         (props.data) ?
-         ( props.data.map((item,index)=> {
-            const {Poster} = item;
-            return  <Movie key={index}>
-                <MovieImage  src={Poster} />
-            </Movie>
-          })) :
-          <Movie> <p>No movie yet</p></Movie>
-          
-      }
-      </>
-    )
-  }
 
 
   return (
