@@ -9,13 +9,14 @@ import {MovieContainer,MovieSearch,MovieCategory,MovieListScroll,Movie,MovieImag
 
 
 const API_KEY ='b78fb30c';
+
 function App() {
 
   const [data,setData] = useState([]);
   const [search,setSearch] = useState('');
  
 
-  const SearchUrl = `http://www.omdbapi.com/?s=${search}&apikey=${API_KEY}`;
+  const SearchUrl = `http://www.omdbapi.com/?s=${search}&apikey=b78fb30c`;
 
   useEffect(() => {
       axios.get(SearchUrl)
