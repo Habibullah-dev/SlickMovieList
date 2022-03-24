@@ -3,13 +3,14 @@ import axios from 'axios';
 
 import './App.css';
 
+// functional Component
+import  MovieFuncList from './FunctionComponents/movieFuncList';
 //style component
 import {HeaderContainer,HeaderLogo} from './StyledComponent/header';
 import {BannerContainer,BannerText} from './StyledComponent/banner';
 import {MovieContainer,MovieSearch,MovieCategory,MovieListScroll} from './StyledComponent/movie';
 
-// functional Component
-import  MovieFuncList from './FunctionComponents/MovieFuncList';
+
 
 function App() {
 
